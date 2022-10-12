@@ -1,7 +1,10 @@
 package com.plateer.study.day1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 // 성격 유형 검사하기 - https://school.programmers.co.kr/learn/courses/30/lessons/118666
 public class Solution {
@@ -21,6 +24,7 @@ public class Solution {
         List<String[]> surveyList = new ArrayList<>();
         List<Integer> pointList = new ArrayList<>();
 
+        System.out.println(surveyList);
         for (String s : survey) {
             surveyList.add(s.split(""));
         }
@@ -54,7 +58,7 @@ public class Solution {
             } else if (choices[index] > 4) {
                 for (KaKao kaKao : kaKaoList) {
                     if (kaKao.getPersonality2().equals(surveyList.get(index)[1])) {
-                        kaKao.setPersonalityPoint2(kaKao.getPersonalityPoint() + pointList.get(index));
+                        kaKao.setPersonalityPoint2(kaKao.getPersonalityPoint2() + pointList.get(index));
                     } else if (kaKao.getPersonality().equals(surveyList.get(index)[1])) {
                         kaKao.setPersonalityPoint(kaKao.getPersonalityPoint() + pointList.get(index));
                     }
