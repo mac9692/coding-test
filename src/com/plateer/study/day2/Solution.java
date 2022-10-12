@@ -1,7 +1,8 @@
-package com.plateer.study.two;
+package com.plateer.study.day2;
 
 import java.util.*;
 
+// 신고 결과 받기 - https://school.programmers.co.kr/learn/courses/30/lessons/92334?language=java
 public class Solution {
     public static void main(String[] args) {
         String[] id_list = {"muzi", "frodo", "apeach", "neo"};
