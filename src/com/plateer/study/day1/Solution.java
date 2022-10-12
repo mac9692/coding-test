@@ -1,10 +1,7 @@
 package com.plateer.study.day1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 // 성격 유형 검사하기 - https://school.programmers.co.kr/learn/courses/30/lessons/118666
 public class Solution {
