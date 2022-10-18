@@ -51,6 +51,8 @@ public class Solution {
                 if (sum == n) {
                     answer++;
                     break;
+                } else if (sum > n) {
+                    break;
                 }
             }
             sum = 0;
