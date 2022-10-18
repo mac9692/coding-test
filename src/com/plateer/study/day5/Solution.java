@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+// 체육복 - https://school.programmers.co.kr/learn/courses/30/lessons/42862
 public class Solution {
     public static void main(String[] args) {
         int n = 4;

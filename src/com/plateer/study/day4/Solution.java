@@ -3,6 +3,7 @@ package com.plateer.study.day4;
 import java.util.Arrays;
 import java.util.Collections;
 
+// 숫자 짝꿍 - https://school.programmers.co.kr/learn/courses/30/lessons/131128
 public class Solution {
     public static void main(String[] args) {
         String x = "12321";
