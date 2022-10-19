@@ -14,7 +14,6 @@ public class Solution {
 
     public static String solution(String s) {
         List<Integer> integerList = Arrays.stream(s.split(" ")).map(Integer::parseInt).sorted(Collections.reverseOrder()).collect(Collectors.toList());
-        String answer = String.valueOf(integerList.get(integerList.size()-1)).concat(" ").concat(String.valueOf(integerList.get(0)));
-        return answer;
+        return String.valueOf(integerList.get(integerList.size()-1)).concat(" ").concat(String.valueOf(integerList.get(0)));
     }
 }
