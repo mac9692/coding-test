@@ -9,9 +9,14 @@ public class SolutionTwo {
     }
 
     public static String solution(String s) {
-        StringBuilder stringBuilder = new StringBuilder();
-        Arrays.stream(s.trim().split(" ")).map(String::toLowerCase).map(x -> x.substring(0, 1).toUpperCase().concat(x.substring(1))).forEach(str -> stringBuilder.append(str + " "));
+        String answer = "";
+        String[] strings = s.toLowerCase().split("");
+        boolean flag = true;
 
-        return stringBuilder.toString().trim();
+        for (String str : strings) {
+            answer += flag ? str.toUpperCase() : str;
+            flag = str.equals(" ") ? true : false;
+        }
+        return answer;
     }
 }
