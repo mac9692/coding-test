@@ -1,7 +1,6 @@
 package com.plateer.study.day8;
 
-import java.util.Arrays;
-
+// JadenCase 문자열 만들기 - https://school.programmers.co.kr/learn/courses/30/lessons/12951
 public class SolutionTwo {
     public static void main(String[] args) {
         String s = "3people unFollowed me";
