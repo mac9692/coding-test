@@ -1,7 +1,6 @@
 package com.plateer.study.day10;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 // 자연수 뒤집어 배열로 만들기 - https://school.programmers.co.kr/learn/courses/30/lessons/12932
 public class Solution {
