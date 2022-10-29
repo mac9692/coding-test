@@ -15,7 +15,6 @@ public class Solution {
         for (String b : babbling) {
             for (String c : canSpeak) {
                 if (b.contains(c)) {
-                    System.out.println(b + " " + c);
                     b = b.replace(c, "-");
                 }
             }
