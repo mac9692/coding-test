@@ -1,7 +1,6 @@
 package com.plateer.study.day15;
 
-import java.util.Arrays;
-
+// 옹알이1 - https://school.programmers.co.kr/learn/courses/30/lessons/120956
 public class Solution {
     public static void main(String[] args) {
         String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"};
