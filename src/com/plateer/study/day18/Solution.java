@@ -1,6 +1,7 @@
 package com.plateer.study.day18;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,7 +9,7 @@ import java.util.List;
 public class Solution {
     public static void main(String[] args) {
         long n = 118372;
-        solution(n);
+        solution2(n);
     }
 
     public static long solution(long n) {
@@ -23,6 +24,19 @@ public class Solution {
         StringBuilder stringBuilder = new StringBuilder();
 
         longList.forEach(stringBuilder::append);
+
+        return Long.parseLong(stringBuilder.toString());
+    }
+
+    public static long solution2(long n) {
+        String[] strings = String.valueOf(n).split("");
+
+        Arrays.sort(strings, Collections.reverseOrder());
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s : strings) {
+            stringBuilder.append(s);
+        }
 
         return Long.parseLong(stringBuilder.toString());
     }
