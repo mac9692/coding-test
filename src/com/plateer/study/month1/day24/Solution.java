@@ -18,14 +18,14 @@ public class Solution {
             list.add(num);
         }
 
-        list.sort(Comparator.naturalOrder());
-        list.remove(0);
+        list.sort(Comparator.reverseOrder());
+        list.remove(list.size()-1);
         if (list.size() == 0) {
             list.add(-1);
         }
 
-        System.out.println(list);
-        int[] answer = list.toArray(new Integer[0]);
+        Integer[] integerList = list.toArray(new Integer[list.size()]);
+        int[] answer = Arrays.stream(integerList).mapToInt(item -> item).toArray();
         return answer;
     }
 }
