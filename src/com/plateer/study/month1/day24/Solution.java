@@ -1,10 +1,8 @@
 package com.plateer.study.month1.day24;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
 
+// 제일 작은 수 제거하기 - https://school.programmers.co.kr/learn/courses/30/lessons/12935
 public class Solution {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 1};
@@ -12,20 +10,22 @@ public class Solution {
     }
 
     public static int[] solution(int[] arr) {
-        List<Integer> list = new ArrayList<>();
+        if (arr.length == 1) {
+            arr[0] = -1;
+        } else {
+            int min = arr[0];
 
-        for (int num : arr) {
-            list.add(num);
+            for (Integer num : arr) {
+                min = Math.min(min, num);
+            }
+
+            int filter = min;
+
+            arr = Arrays.stream(arr)
+                    .filter(i -> i != filter)
+                    .toArray();
         }
 
-        list.sort(Comparator.reverseOrder());
-        list.remove(list.size()-1);
-        if (list.size() == 0) {
-            list.add(-1);
-        }
-
-        Integer[] integerList = list.toArray(new Integer[list.size()]);
-        int[] answer = Arrays.stream(integerList).mapToInt(item -> item).toArray();
-        return answer;
+        return arr;
     }
 }
